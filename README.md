@@ -1,6 +1,6 @@
 # OpenSSH Controller for Windows (Dev-C++ Edition)
 
-## ✨ Overview
+##  Overview
 
 This repository hosts a lightweight, secure, and Windows-native OpenSSH controller application developed using **Dev-C++**, following **Microsoft's Windows Development Guidelines**. The project aims to bridge the usability of SSH on Windows systems while retaining full control over the source and build process.
 
@@ -8,7 +8,7 @@ This controller supports launching OpenSSH sessions via native Windows APIs, man
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 OpenSSH_Controller_Project/
@@ -28,16 +28,16 @@ OpenSSH_Controller_Project/
 
 ---
 
-## ⚙️ Build Instructions
+##  Build Instructions
 
-### ✅ Requirements
+### Requirements
 
 * Windows 10, 11, or Server 2019+
 * [Dev-C++ 5.11](https://sourceforge.net/projects/orwelldevcpp/) with TDM-GCC compiler
 * Optional: [OpenSSL for Windows](https://slproweb.com/products/Win32OpenSSL.html) if encryption libraries are needed
 * Windows SDK preinstalled (for headers like `winsock2.h` and `wincrypt.h`)
 
-### 🧱 Compilation Steps
+###  Compilation Steps
 
 1. Launch Dev-C++ and open `OpenSSH.dev`
 2. Navigate to **Project > Project Options > Parameters**
@@ -50,7 +50,7 @@ OpenSSH_Controller_Project/
    *(Append `-lssl -lcrypto` for OpenSSL integration)*
 4. Click **F11** to build and execute
 
-### 🔍 Notes
+###  Notes
 
 * Ensure `myicon.ico` is available during compilation
 * Resource scripts must be compiled before linking if modified
@@ -58,22 +58,22 @@ OpenSSH_Controller_Project/
 
 ---
 
-## 🛡 Microsoft Windows Compliance
+##  Microsoft Windows Compliance
 
 This project was designed with full compliance to Microsoft Windows guidelines for native applications:
 
 | Compliance Category  | Details                                                               |
 | -------------------- | --------------------------------------------------------------------- |
-| ✅ File Paths         | Unicode-compliant paths, support for `%APPDATA%`, `%LOCALAPPDATA%`    |
-| ✅ Registry Access    | Optional configuration keys can be stored in `HKCU\Software\OpenSSH`  |
-| ✅ Windows API        | Uses `WinSock2`, `Crypt32`, `ShellExecuteW`, `GetUserNameW`           |
-| ✅ Resource Usage     | Implements `.rc` for icons, versioning, manifest (UAC ready)          |
-| ✅ Privilege Handling | Supports user-mode execution and optional elevation via UAC prompt    |
-| ✅ Console Support    | UTF-8 compliant console output, `SetConsoleOutputCP(CP_UTF8)` applied |
+|  File Paths         | Unicode-compliant paths, support for `%APPDATA%`, `%LOCALAPPDATA%`    |
+|  Registry Access    | Optional configuration keys can be stored in `HKCU\Software\OpenSSH`  |
+|  Windows API        | Uses `WinSock2`, `Crypt32`, `ShellExecuteW`, `GetUserNameW`           |
+|  Resource Usage     | Implements `.rc` for icons, versioning, manifest (UAC ready)          |
+|  Privilege Handling | Supports user-mode execution and optional elevation via UAC prompt    |
+|  Console Support    | UTF-8 compliant console output, `SetConsoleOutputCP(CP_UTF8)` applied |
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Custom launcher for SSH sessions via native `ssh.exe`
 * Windows-native implementation in ANSI C++
@@ -84,7 +84,7 @@ This project was designed with full compliance to Microsoft Windows guidelines f
 
 ---
 
-## 📚 Developer Notes
+##  Developer Notes
 
 ### Header Highlights (`OpenSSH_private.h`):
 
@@ -105,7 +105,7 @@ This project was designed with full compliance to Microsoft Windows guidelines f
 
 ---
 
-## 🗺 Roadmap (Planned Development Phases)
+##  Roadmap (Planned Development Phases)
 
 | Stage | Feature / Goal                    | Description                                                                       |
 | ----- | --------------------------------- | --------------------------------------------------------------------------------- |
@@ -125,7 +125,7 @@ This project was designed with full compliance to Microsoft Windows guidelines f
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the **MIT License**.
 
@@ -143,7 +143,7 @@ copies of the Software...
 
 ---
 
-## 🙏 Credits
+##  Credits
 
 * [OpenSSH](https://www.openssh.com/) for foundational tools
 * [Microsoft Developer Docs](https://learn.microsoft.com/) for Win32 API references
