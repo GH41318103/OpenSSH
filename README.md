@@ -12,18 +12,18 @@ This controller supports launching OpenSSH sessions via native Windows APIs, man
 
 ```
 OpenSSH_Controller_Project/
-├── .vscode/                  # VSCode environment settings (optional)
-├── main.cpp                  # Core source code for controller logic
-├── OpenSSH.dev               # Dev-C++ project descriptor
-├── OpenSSH.exe               # Compiled SSH controller binary
-├── OpenSSH_private.h         # Custom header with macro/constant definitions
-├── OpenSSH_private.rc        # Resource file for icons, metadata, and versioning
-├── OpenSSH_private.res       # Compiled Windows resources
-├── resource.h                # Resource ID declarations
-├── resource.rc               # Icon and metadata definitions
-├── myicon.ico                # Application icon
-├── sop.html / sop.pdf        # SSH usage SOP for Win11 terminals
-├── sshpicture.txt            # ASCII banner or connection metadata
+├─ .vscode/                  # VSCode environment settings (optional)
+├─ main.cpp                  # Core source code for controller logic
+├─ OpenSSH.dev               # Dev-C++ project descriptor
+├─ OpenSSH.exe               # Compiled SSH controller binary
+├─ OpenSSH_private.h         # Custom header with macro/constant definitions
+├─ OpenSSH_private.rc        # Resource file for icons, metadata, and versioning
+├─ OpenSSH_private.res       # Compiled Windows resources
+├─ resource.h                # Resource ID declarations
+├─ resource.rc               # Icon and metadata definitions
+├─ myicon.ico                # Application icon
+├─ sop.html / sop.pdf        # SSH usage SOP for Win11 terminals
+└─ sshpicture.txt            # ASCII banner or connection metadata
 ```
 
 ---
